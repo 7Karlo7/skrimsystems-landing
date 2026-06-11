@@ -5,37 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DentalFlow — AI recepcionar za dentalne klinike</title>
   <meta name="description" content="DentalFlow pomaže dentalnim klinikama odgovoriti na upite pacijenata 24/7, prikupiti ključne podatke i organizirati leadove u CRM dashboardu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a href="#top" class="brand"><span class="brand-mark">DF</span><span><strong>DentalFlow</strong><small>by Skrim Systems</small></span></a>
+      <a href="#top" class="brand" aria-label="DentalFlow by Skrim Systems">
+        <img src="assets/skrim-logo.png" alt="Skrim Systems" class="brand-logo" onerror="this.style.display='none'">
+        <span class="brand-divider"></span>
+        <span class="brand-text">
+          <strong>DentalFlow</strong>
+          <small>by Skrim Systems</small>
+        </span>
+      </a>
+
       <div class="nav-links" id="navLinks">
-        <a href="#platforma">Platforma</a><a href="#kako-radi">Kako radi</a><a href="#funkcije">Funkcije</a><a href="#cijena">Cijena</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a>
+        <a href="#platforma">Platforma</a>
+        <a href="#kako-radi">Kako radi</a>
+        <a href="#funkcije">Funkcije</a>
+        <a href="#cijena">Cijena</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
       </div>
+
       <a href="#kontakt" class="btn btn-small">Zatraži ponudu</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Otvori navigaciju"><span></span><span></span></button>
     </nav>
   </header>
+
   <main id="top">
-    <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-      <div class="badge"><span></span> AI Front Office za dentalne klinike</div>
-      <h1>DentalFlow — AI recepcionar koji pretvara upite pacijenata u organizirane leadove.</h1>
-      <p class="lead">DentalFlow pomaže dentalnim klinikama odgovoriti na upite pacijenata 24/7, prikupiti ključne podatke i spremiti ih u pregledan CRM dashboard.</p>
-      <div class="hero-actions"><a href="#kontakt" class="btn">Zatraži ponudu <span>→</span></a><a href="#kako-radi" class="btn btn-secondary">Pogledaj kako radi</a></div>
-      <div class="trust-points"><span>✓ Dostupno 24/7</span><span>✓ CRM dashboard</span><span>✓ Brza implementacija</span></div>
-    </div><div class="hero-visual"><div class="browser"><div class="browser-top"><div class="dots"><i></i><i></i><i></i></div><div class="browser-url">app.skrimsystems.com</div></div><div class="mock-dashboard"><aside><b>DentalFlow</b><span>Clinic OS</span><p class="active">Dashboard</p><p>Leadovi</p><p>AI recepcionar</p><p>Statistike</p></aside><section><div class="mock-title"><span><small>OVERVIEW</small><strong>Pregled klinike.</strong></span><em>Novi lead</em></div><div class="mini-cards"><div><small>Leadovi</small><b>—</b></div><div><small>Novi</small><b>—</b></div><div><small>Kontaktirani</small><b>—</b></div><div><small>Rezervirani</small><b>—</b></div></div><div class="table"><div class="row head"><span>Pacijent</span><span>Usluga</span><span>Status</span></div><div class="row"><i></i><i></i><b>Novi</b></div><div class="row"><i></i><i></i><b>Kontaktiran</b></div><div class="row"><i></i><i></i><b>Rezerviran</b></div></div></section></div></div></div></div></section>
-    <section class="section" id="problem"><div class="container center"><span class="eyebrow">Problem</span><h2>Ordinacije gube upite dok tim radi s pacijentima.</h2><p class="section-text">Pacijenti često šalju upite izvan radnog vremena, recepcija ne stigne odgovoriti svima odmah, a poruke se lako izgube između telefona, maila i društvenih mreža.</p><div class="cards four"><article class="card"><div class="icon">⏱</div><h3>Upiti izvan radnog vremena</h3><p>Pacijenti šalju upite navečer, vikendom ili dok recepcija ne radi.</p></article><article class="card"><div class="icon">▣</div><h3>Pretrpana recepcija</h3><p>Dok tim radi s pacijentima, novi upiti mogu ostati bez brzog odgovora.</p></article><article class="card"><div class="icon">↗</div><h3>Poruke po kanalima</h3><p>Upiti stižu putem maila, telefona, društvenih mreža i web forme.</p></article><article class="card"><div class="icon">✓</div><h3>Nema pregleda statusa</h3><p>Teško je pratiti tko je kontaktiran, rezerviran ili još čeka odgovor.</p></article></div></div></section>
-    <section class="section alt" id="kako-radi"><div class="container split"><div><span class="eyebrow">Rješenje</span><h2>DentalFlow organizira svaki upit od prvog kontakta do follow-upa.</h2><p class="section-text">AI recepcionar vodi razgovor s pacijentom, prikuplja osnovne informacije i sprema upit u CRM dashboard kako bi tim ordinacije imao jasan pregled sljedećeg koraka.</p><a href="#kontakt" class="btn">Zatraži ponudu <span>→</span></a></div><div class="steps"><div><b>01</b><span>AI razgovara s pacijentom</span></div><div><b>02</b><span>Prikuplja ime, telefon, uslugu i opis problema</span></div><div><b>03</b><span>Sprema upit kao lead</span></div><div><b>04</b><span>Tim ordinacije vidi status, napomene i kontakt podatke</span></div></div></div></section>
-    <section class="section" id="platforma"><div class="container center"><span class="eyebrow">Platforma</span><h2>Jedan sustav za AI recepciju i lead management.</h2><div class="cards features" id="funkcije"><article class="card"><div class="icon">💬</div><h3>AI recepcionar 24/7</h3><p>Odgovara na upite pacijenata u bilo koje doba dana i prikuplja ključne informacije.</p></article><article class="card"><div class="icon">▦</div><h3>CRM lista leadova</h3><p>Svi upiti spremljeni su u preglednu listu s imenom, kontaktom, uslugom i statusom.</p></article><article class="card"><div class="icon">🏷</div><h3>Statusi leadova</h3><p>Pratite svaki upit kroz faze: Novi, Kontaktiran, Rezerviran, Završen, Otkazano.</p></article><article class="card"><div class="icon">✎</div><h3>Napomene po pacijentu</h3><p>Dodajte interne bilješke kako bi tim znao što je dogovoreno.</p></article><article class="card"><div class="icon">✉</div><h3>Email obavijesti</h3><p>Klinika dobiva obavijest kada novi upit stigne kroz AI recepcionara.</p></article><article class="card"><div class="icon">⚙</div><h3>Postavke ordinacije</h3><p>Prilagodite naziv, kontakt, radno vrijeme, usluge i česta pitanja ordinacije.</p></article><article class="card"><div class="icon">⌁</div><h3>Statistike</h3><p>Pregledajte osnovne podatke o broju upita i statusima.</p></article><article class="card"><div class="icon">⇩</div><h3>CSV export</h3><p>Izvezite leadove za daljnju obradu ili arhivu.</p></article></div></div></section>
-    <section class="section alt"><div class="container split"><div class="chat-card"><div class="chat-head">● AI recepcionar</div><div class="bubble ai"></div><div class="bubble user"></div><div class="bubble ai short"></div><div class="patient-grid"><span>Ime</span><span>Telefon</span><span>Usluga</span><span>Opis problema</span></div></div><div><span class="eyebrow">AI asistent</span><h2>AI recepcionar koji postavlja prava pitanja.</h2><p class="section-text">DentalFlow ne služi samo za običan razgovor. Asistent vodi pacijenta kroz kratak i jasan proces, prikuplja ključne podatke i priprema upit za ordinaciju.</p><ul class="check-list"><li>Vodi strukturiran razgovor s pacijentom</li><li>Prikuplja ime, telefon, uslugu i opis problema</li><li>Dostupan 24/7 bez potrebe za recepcijom</li><li>Prilagodljiv informacijama vaše ordinacije</li></ul></div></div></section>
-    <section class="section"><div class="container split reverse"><div><span class="eyebrow">Dashboard</span><h2>Pregled svih upita na jednom mjestu.</h2><p class="section-text">CRM dashboard daje ordinaciji pregled leadova, statusa, napomena i aktivnosti bez ručnog zapisivanja i izgubljenih poruka.</p><div class="pill-row"><span>Leadovi</span><span>Statusi</span><span>Napomene</span><span>Aktivnosti</span></div></div><div class="small-dashboard"><div class="browser-top"><div class="dots"><i></i><i></i><i></i></div><div class="browser-url">CRM dashboard</div></div><div class="tabs"><span class="selected">Leadovi</span><span>Statusi</span><span>Napomene</span><span>Aktivnosti</span></div><div class="dash-row"><span></span><span></span><b>Novi</b></div><div class="dash-row"><span></span><span></span><b>Kontaktirani</b></div><div class="dash-row"><span></span><span></span><b>Rezervirani</b></div><div class="dash-row"><span></span><span></span><b>Završeni</b></div></div></div></section>
-    <section class="section alt" id="cijena"><div class="container center"><span class="eyebrow">Cijena</span><h2>Jednostavna cijena za profesionalan front-office sustav.</h2><article class="pricing-card"><span class="plan">DentalFlow Pro</span><div class="price">99 € <small>/ mjesečno</small></div><ul><li>✓ AI recepcionar 24/7</li><li>✓ CRM dashboard</li><li>✓ Leadovi i statusi</li><li>✓ Email obavijesti</li><li>✓ Postavke ordinacije</li><li>✓ Statistike</li><li>✓ Osnovna podrška</li></ul><p>Cijena ne uključuje posebne integracije ili dodatne prilagodbe.</p><a href="#kontakt" class="btn">Zatraži ponudu</a></article></div></section>
-    <section class="section" id="faq"><div class="container narrow"><span class="eyebrow center-label">FAQ</span><h2 class="center-title">Česta pitanja</h2><div class="faq"><button>Je li DentalFlow samo chatbot?<span>+</span></button><div class="faq-answer">Ne. DentalFlow je AI front-office sustav koji kombinira AI recepcionara i CRM dashboard za organizaciju upita pacijenata.</div><button>Radi li DentalFlow 24/7?<span>+</span></button><div class="faq-answer">Da. AI recepcionar može odgovarati na upite izvan radnog vremena i prikupiti ključne informacije za follow-up.</div><button>Može li se prilagoditi mojoj ordinaciji?<span>+</span></button><div class="faq-answer">Da. Asistent može koristiti informacije o ordinaciji kao što su usluge, radno vrijeme, kontakt podaci i česta pitanja.</div><button>Može li AI rezervirati termine?<span>+</span></button><div class="faq-answer">Ne automatski u osnovnoj verziji. Fokus je na prikupljanju i organizaciji leadova. Rezervacija termina može biti dodatna integracija ili posebna prilagodba.</div><button>Što se događa s upitima pacijenata?<span>+</span></button><div class="faq-answer">Svaki upit sprema se kao lead u CRM dashboard s kontakt podacima, interesom za uslugu, opisom problema i statusom.</div><button>Koliko košta DentalFlow?<span>+</span></button><div class="faq-answer">DentalFlow Pro kreće od 99 € mjesečno. Posebne integracije ili dodatne prilagodbe mogu se naplatiti odvojeno.</div></div></div></section>
-    <section class="section alt" id="kontakt"><div class="container contact-grid"><div><span class="eyebrow">Kontakt</span><h2>Zatražite ponudu za svoju ordinaciju.</h2><p class="section-text">Pošaljite osnovne podatke i javit ćemo vam se s više informacija o DentalFlow sustavu.</p><p class="contact-note">Forma za sada otvara email poruku. Kasnije možemo spojiti pravu lead formu preko Formspreeja ili backend aplikacije.</p></div><form class="contact-form" id="contactForm"><label>Ime i prezime<input name="name" required /></label><label>Naziv ordinacije<input name="clinic" required /></label><label>Email<input type="email" name="email" required /></label><label>Telefon<input name="phone" /></label><label>Poruka<textarea name="message" rows="5"></textarea></label><button class="btn" type="submit">Pošalji upit</button></form></div></section>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">AI Front Office za dentalne klinike</div>
+          <h1>DentalFlow pretvara upite pacijenata u organizirane leadove.</h1>
+          <p class="lead">AI recepcionar koji odgovara 24/7, prikuplja ključne podatke pacijenata i sprema svaki upit u pregledan CRM dashboard.</p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn">Zatraži ponudu <span>→</span></a>
+            <a href="#kako-radi" class="btn btn-secondary">Pogledaj kako radi</a>
+          </div>
+          <div class="trust-strip"><span>Dostupno 24/7</span><span>Leadovi i statusi</span><span>Brza implementacija</span></div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Sažetak platforme">
+          <div class="panel-header"><span class="status-dot"></span><span>DentalFlow workspace</span></div>
+          <div class="panel-content">
+            <div class="panel-row"><small>Ulazni upit</small><strong>Pacijent traži informacije o usluzi</strong></div>
+            <div class="flow-line"></div>
+            <div class="mini-process">
+              <div><b>01</b><span>AI postavlja pitanja</span></div>
+              <div><b>02</b><span>Podaci se strukturiraju</span></div>
+              <div><b>03</b><span>Lead ide u dashboard</span></div>
+            </div>
+            <div class="status-board"><div><span>Novi</span></div><div><span>Kontaktiran</span></div><div><span>Rezerviran</span></div><div><span>Završen</span></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Problem</span><h2>Ordinacije gube upite dok tim radi s pacijentima.</h2><p>Pacijenti šalju upite izvan radnog vremena, recepcija ne može uvijek odgovoriti odmah, a poruke se lako izgube između telefona, maila i društvenih mreža.</p></div>
+        <div class="cards four">
+          <article class="card"><span class="line-icon"></span><h3>Upiti izvan radnog vremena</h3><p>Pacijenti šalju upite navečer, vikendom ili dok recepcija ne radi.</p></article>
+          <article class="card"><span class="line-icon"></span><h3>Pretrpana recepcija</h3><p>Dok tim radi s pacijentima, novi upiti često ostaju bez brzog odgovora.</p></article>
+          <article class="card"><span class="line-icon"></span><h3>Poruke po kanalima</h3><p>Upiti stižu putem maila, telefona, društvenih mreža i web forme.</p></article>
+          <article class="card"><span class="line-icon"></span><h3>Nema jasnog statusa</h3><p>Teško je pratiti tko je kontaktiran, rezerviran ili još čeka odgovor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="kako-radi">
+      <div class="container split">
+        <div class="section-copy"><span class="eyebrow">Rješenje</span><h2>DentalFlow organizira svaki upit od prvog kontakta do follow-upa.</h2><p>Asistent vodi pacijenta kroz kratak proces, prikuplja osnovne informacije i sprema upit u CRM dashboard kako bi tim ordinacije znao što je sljedeći korak.</p><a href="#kontakt" class="btn">Zatraži ponudu <span>→</span></a></div>
+        <div class="process-list"><article><b>01</b><span>AI razgovara s pacijentom</span></article><article><b>02</b><span>Prikuplja ime, telefon, uslugu i opis problema</span></article><article><b>03</b><span>Sprema upit kao lead u dashboard</span></article><article><b>04</b><span>Tim ordinacije vidi status i kontakt podatke</span></article></div>
+      </div>
+    </section>
+
+    <section class="section" id="platforma">
+      <div class="container">
+        <div class="section-head center"><span class="eyebrow">Platforma</span><h2>Jedan sustav za AI recepciju i lead management.</h2></div>
+        <div class="cards features" id="funkcije">
+          <article class="card feature-card"><span class="line-icon"></span><h3>AI recepcionar 24/7</h3><p>Odgovara na upite pacijenata u bilo koje doba dana i prikuplja ključne informacije.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>CRM lista leadova</h3><p>Svi upiti spremljeni su u preglednu listu s imenom, kontaktom, uslugom i statusom.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>Statusi leadova</h3><p>Pratite svaki upit kroz faze: Novi, Kontaktiran, Rezerviran, Završen i Otkazano.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>Napomene po pacijentu</h3><p>Dodajte interne bilješke kako bi tim znao što je dogovoreno.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>Email obavijesti</h3><p>Klinika dobiva obavijest kada novi upit stigne kroz AI recepcionara.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>Postavke ordinacije</h3><p>Prilagodite naziv, kontakt, radno vrijeme, usluge i česta pitanja ordinacije.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>Statistike</h3><p>Pregledajte osnovne podatke o broju upita i statusima.</p></article>
+          <article class="card feature-card"><span class="line-icon"></span><h3>CSV export</h3><p>Izvezite leadove za daljnju obradu ili arhivu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container product-block">
+        <div class="section-copy"><span class="eyebrow">AI asistent</span><h2>AI recepcionar koji postavlja prava pitanja.</h2><p>DentalFlow nije običan chatbot. Asistent vodi strukturiran razgovor s pacijentom, prikuplja podatke koji recepciji trebaju i priprema upit za daljnji kontakt.</p></div>
+        <div class="premium-card"><div class="card-top">Strukturirani razgovor</div><div class="field-grid"><span>Ime pacijenta</span><span>Telefon</span><span>Tražena usluga</span><span>Opis problema</span></div><div class="note-card"><small>Rezultat</small><strong>Uredan lead spreman za follow-up</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container product-block reverse">
+        <div class="section-copy"><span class="eyebrow">Dashboard</span><h2>Pregled svih upita na jednom mjestu.</h2><p>CRM dashboard daje ordinaciji pregled leadova, statusa, napomena i aktivnosti bez ručnog zapisivanja i izgubljenih poruka.</p></div>
+        <div class="premium-card dashboard-card"><div class="card-top">Lead management</div><div class="status-grid"><span>Novi</span><span>Kontaktirani</span><span>Rezervirani</span><span>Završeni</span></div><div class="lead-lines"><i></i><i></i><i></i><i></i></div></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="cijena">
+      <div class="container center"><span class="eyebrow">Cijena</span><h2>Jednostavna cijena za profesionalan front-office sustav.</h2><article class="pricing-card"><span class="plan">DentalFlow Pro</span><div class="price">99 € <small>/ mjesečno</small></div><ul><li>AI recepcionar 24/7</li><li>CRM dashboard</li><li>Leadovi i statusi</li><li>Email obavijesti</li><li>Postavke ordinacije</li><li>Statistike</li><li>Osnovna podrška</li></ul><p>Cijena ne uključuje posebne integracije ili dodatne prilagodbe.</p><a href="#kontakt" class="btn">Zatraži ponudu</a></article></div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head center"><span class="eyebrow">FAQ</span><h2>Česta pitanja</h2></div>
+        <div class="faq">
+          <button>Je li DentalFlow samo chatbot?<span>+</span></button><div class="faq-answer">Ne. DentalFlow je AI front-office sustav koji kombinira AI recepcionara i CRM dashboard za organizaciju upita pacijenata.</div>
+          <button>Radi li DentalFlow 24/7?<span>+</span></button><div class="faq-answer">Da. AI recepcionar može odgovarati na upite izvan radnog vremena i prikupiti ključne informacije za follow-up.</div>
+          <button>Može li se prilagoditi mojoj ordinaciji?<span>+</span></button><div class="faq-answer">Da. Asistent može koristiti informacije o ordinaciji kao što su usluge, radno vrijeme, kontakt podaci i česta pitanja.</div>
+          <button>Može li AI rezervirati termine?<span>+</span></button><div class="faq-answer">Ne automatski u osnovnoj verziji. Fokus je na prikupljanju i organizaciji leadova. Rezervacija termina može biti dodatna integracija ili posebna prilagodba.</div>
+          <button>Što se događa s upitima pacijenata?<span>+</span></button><div class="faq-answer">Svaki upit sprema se kao lead u CRM dashboard s kontakt podacima, interesom za uslugu, opisom problema i statusom.</div>
+          <button>Koliko košta DentalFlow?<span>+</span></button><div class="faq-answer">DentalFlow Pro kreće od 99 € mjesečno. Posebne integracije ili dodatne prilagodbe mogu se naplatiti odvojeno.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="section-copy"><span class="eyebrow">Kontakt</span><h2>Zatražite ponudu za svoju ordinaciju.</h2><p>Pošaljite osnovne podatke i javit ćemo vam se s više informacija o DentalFlow sustavu.</p><p class="contact-note">Forma trenutno otvara email poruku. Kasnije možemo spojiti pravu lead formu preko backend aplikacije.</p></div>
+        <form class="contact-form" id="contactForm"><label>Ime i prezime<input name="name" required /></label><label>Naziv ordinacije<input name="clinic" required /></label><label>Email<input type="email" name="email" required /></label><label>Telefon<input name="phone" /></label><label>Poruka<textarea name="message" rows="5"></textarea></label><button class="btn" type="submit">Pošalji upit</button></form>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div><a href="#top" class="brand footer-brand"><span class="brand-mark">DF</span><span><strong>DentalFlow</strong><small>by Skrim Systems</small></span></a><p>AI recepcionar i CRM sustav za dentalne klinike.</p></div><div><strong>Proizvod</strong><a href="#platforma">Platforma</a><a href="#kako-radi">Kako radi</a><a href="#funkcije">Funkcije</a></div><div><strong>Tvrtka</strong><a href="#cijena">Cijena</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a></div></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#top" class="brand footer-brand"><img src="assets/skrim-logo.png" alt="Skrim Systems" class="brand-logo" onerror="this.style.display='none'"><span class="brand-text"><strong>DentalFlow</strong><small>by Skrim Systems</small></span></a><p>AI recepcionar i CRM sustav za dentalne klinike.</p></div>
+      <div><strong>Proizvod</strong><a href="#platforma">Platforma</a><a href="#kako-radi">Kako radi</a><a href="#funkcije">Funkcije</a></div>
+      <div><strong>Tvrtka</strong><a href="#cijena">Cijena</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a></div>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
