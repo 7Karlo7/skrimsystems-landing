@@ -41,7 +41,7 @@
               border-bottom:1px solid var(--border)}
 
               .nav {
-                height:98px;
+                height:110px;
                 display:flex;
                 align-items:center;
                 gap:30px}
@@ -53,10 +53,11 @@
                   margin-right:auto}
 
                   .brand-logo {
-                    width:160px;
-                    max-height:76px;
-                    object-fit:contain;
-                    display:block}
+                    width: 240px;
+                    max-height: 95px;
+                    object-fit: contain;
+                    display: block;
+                  }
 
                     .brand-lockup {
                       border-left:1px solid var(--border);
