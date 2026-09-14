@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DentalFlow — AI recepcionar za dentalne klinike</title>
-<meta name="description" content="DentalFlow pomaže dentalnim klinikama odgovoriti na upite pacijenata 24/7, prikupiti ključne podatke i organizirati leadove u CRM dashboardu." />
+<title>DentalFlow — virtualni recepcionar za dentalne ordinacije</title>
+<meta name="description" content="DentalFlow je virtualni recepcionar koji dentalnim ordinacijama pomaže odgovoriti na upite pacijenata 24/7, prikupiti ključne podatke i organizirati ih u CRM dashboardu." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,10 +21,11 @@
     <div class="nav-links" id="navLinks">
       <a href="#kako-radi">Kako radi</a>
       <a href="#funkcije">Funkcije</a>
+      <a href="#podaci">Podaci pacijenata</a>
       <a href="#cijena">Cijena</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#kontakt" class="btn btn-small">Zatraži ponudu</a>
+    <a href="#kontakt" class="btn btn-small">Isprobaj 14 dana besplatno</a>
     <button class="menu-btn" id="menuBtn" aria-label="Otvori navigaciju"><span></span><span></span></button>
   </nav>
 </header>
@@ -37,24 +38,33 @@
         <h1>Pacijenti pišu u svako doba dana.<br>Ordinacija odgovara kad stigne.</h1>
         <p class="lead">DentalFlow je virtualni recepcionar koji razgovara s pacijentima 24/7, prikuplja njihove podatke i slaže ih u pregledan CRM — tako da vaš tim zna točno koga nazvati i zašto.</p>
         <div class="hero-actions">
-          <a href="#kontakt" class="btn">Zatraži ponudu</a>
+          <a href="#kontakt" class="btn">Isprobaj 14 dana besplatno</a>
           <a href="#kako-radi" class="btn btn-ghost">Pogledaj kako radi</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="chat-mock">
-          <div class="chat-mock-head">
+
+      <div class="hero-visual">
+        <div class="chat-live" id="chatLive">
+          <div class="chat-live-head">
             <span class="chat-dot"></span>
             <b>Virtualni recepcionar</b>
+            <span class="chat-tag">demo uživo</span>
           </div>
-          <div class="chat-mock-body">
-            <p class="bubble in">Dobar dan! Zanima me cijena izbjeljivanja zubi.</p>
-            <p class="bubble out">Izbjeljivanje radimo u sklopu redovnog pregleda — cijena ovisi o stanju zubi. Želite li da vam pomognem dogovoriti termin?</p>
-            <p class="bubble in">Da, molim.</p>
-            <p class="bubble out lead">Zabilježeno — Ana K., 091 234 5678, izbjeljivanje zubi.</p>
+
+          <div class="chat-live-body" id="chatBody">
+            <p class="bubble out">Dobar dan! Ovdje možete postaviti pitanje kao da ste pacijent — o radnom vremenu, uslugama ili dogovoru termina. Kako vam mogu pomoći?</p>
           </div>
+
+          <div class="chat-live-input">
+            <label class="sr-only" for="chatInput">Vaša poruka</label>
+            <input type="text" id="chatInput" placeholder="Upišite poruku..." autocomplete="off" maxlength="500">
+            <button type="button" id="chatSend">Pošalji</button>
+          </div>
+
+          <p class="chat-live-note">Demo primjer ordinacije. Podaci upisani ovdje se ne spremaju.</p>
         </div>
-        <div class="timeline">
+
+        <div class="timeline" aria-hidden="true">
           <div class="timeline-step"><em>01</em>Razgovor s pacijentom</div>
           <div class="timeline-step"><em>02</em>Prikupljeni podaci</div>
           <div class="timeline-step"><em>03</em>Lead u dashboardu</div>
@@ -91,14 +101,14 @@
   <section class="section soft" id="kako-radi">
     <div class="container split">
       <div class="section-copy">
-        <h2>Jedan asistent, od prve poruke do dogovorenog poziva.</h2>
+        <h2>Jedan recepcionar, od prve poruke do dogovorenog poziva.</h2>
         <p>DentalFlow vodi pacijenta kroz kratak, prirodan razgovor — prepoznaje što treba, prikuplja ime, kontakt i opis problema, i sprema sve u dashboard prije nego se telefon uopće zazvoni.</p>
-        <a href="#kontakt" class="btn">Zatraži ponudu</a>
+        <a href="#kontakt" class="btn">Isprobaj 14 dana besplatno</a>
       </div>
       <div class="process-timeline">
         <div class="process-step">
           <span class="process-num">01</span>
-          <div><b>AI razgovara s pacijentom</b><p>Prirodnim jezikom, u ime vaše ordinacije.</p></div>
+          <div><b>Recepcionar razgovara s pacijentom</b><p>Prirodnim jezikom, u ime vaše ordinacije.</p></div>
         </div>
         <div class="process-step">
           <span class="process-num">02</span>
@@ -123,7 +133,7 @@
       </div>
       <div class="feature-grid" id="funkcije">
         <article class="feature feature-lg">
-          <h3>AI recepcionar 24/7</h3>
+          <h3>Virtualni recepcionar 24/7</h3>
           <p>Odgovara na upite pacijenata u bilo koje doba dana, na hrvatskom, prilagođen podacima vaše ordinacije.</p>
         </article>
         <article class="feature">
@@ -154,22 +164,62 @@
     </div>
   </section>
 
+  <section class="section" id="podaci">
+    <div class="container">
+      <div class="section-head">
+        <h2>Podaci pacijenata</h2>
+        <p class="lead">Upiti pacijenata su osjetljivi podaci. Evo točno gdje završavaju i tko im ima pristup.</p>
+      </div>
+
+      <div class="privacy-grid">
+        <article class="privacy-card">
+          <h3>Serveri u Europskoj uniji</h3>
+          <p>Aplikacija i baza podataka nalaze se na serverima u Frankfurtu (Njemačka). Podaci vaših pacijenata ne pohranjuju se izvan EU.</p>
+        </article>
+
+        <article class="privacy-card">
+          <h3>Ugovor o obradi podataka</h3>
+          <p>Uz pretplatu potpisujemo ugovor o obradi podataka. Vaša ordinacija je voditelj obrade, Skrim Systems je izvršitelj obrade i podatke obrađuje isključivo prema vašim uputama.</p>
+        </article>
+
+        <article class="privacy-card">
+          <h3>Samo ono što je nužno</h3>
+          <p>Sprema se ime, kontakt i kratak opis upita. Pristup imaju samo ovlaštene osobe u vašoj ordinaciji i Skrim Systems radi održavanja sustava. Podaci se čuvaju dok ih ordinacija ne obriše ili do prestanka pretplate.</p>
+        </article>
+      </div>
+
+      <p class="privacy-footnote">
+        Za generiranje odgovora koristi se OpenAI API kao podizvršitelj obrade. Detalji su u
+        <a href="privacy.html">Politici privatnosti</a>.
+      </p>
+    </div>
+  </section>
+
   <section class="section soft" id="cijena">
     <div class="container center">
-      <h2>Jedna cijena. Sve uključeno.</h2>
+      <h2>Jedna cijena. Bez skrivenih modula.</h2>
       <article class="pricing-card">
         <span class="plan">DentalFlow Pro</span>
+
         <div class="price">79 € <small>/ mjesečno</small></div>
+        <p class="price-note">Uvodna cijena za prvih 10 ordinacija.</p>
+
+        <div class="price-setup">
+          <span>Jednokratno postavljanje</span>
+          <strong>249 €</strong>
+          <p>Postavljanje sustava, prilagodba odgovora vašoj ordinaciji i uvođenje tima.</p>
+        </div>
+
         <ul>
-          <li>AI recepcionar 24/7</li>
+          <li>Virtualni recepcionar 24/7</li>
           <li>CRM dashboard i statusi</li>
           <li>Email obavijesti</li>
           <li>Postavke ordinacije</li>
           <li>Statistike i CSV export</li>
           <li>Osnovna podrška</li>
         </ul>
-        <p class="fine-print">Cijena ne uključuje posebne integracije ili dodatne prilagodbe.</p>
-        <a href="#kontakt" class="btn">Zatraži ponudu</a>
+
+        <a href="#kontakt" class="btn">Isprobaj 14 dana besplatno</a>
       </article>
     </div>
   </section>
@@ -179,22 +229,22 @@
       <h2>Česta pitanja</h2>
       <div class="faq">
         <button>Je li DentalFlow samo chatbot?<span>+</span></button>
-        <div class="faq-answer"><p>Ne. DentalFlow je AI front-office sustav koji kombinira AI recepcionara i CRM dashboard za organizaciju upita pacijenata.</p></div>
+        <div class="faq-answer"><p>Ne. DentalFlow je front-office sustav koji kombinira virtualnog recepcionara i CRM dashboard za organizaciju upita pacijenata.</p></div>
 
         <button>Radi li DentalFlow 24/7?<span>+</span></button>
-        <div class="faq-answer"><p>Da. AI recepcionar odgovara na upite izvan radnog vremena i prikuplja ključne informacije za follow-up.</p></div>
+        <div class="faq-answer"><p>Da. Virtualni recepcionar odgovara na upite izvan radnog vremena i prikuplja ključne informacije za follow-up.</p></div>
 
         <button>Može li se prilagoditi mojoj ordinaciji?<span>+</span></button>
-        <div class="faq-answer"><p>Da. Asistent koristi podatke o vašoj ordinaciji — usluge, radno vrijeme, kontakt i česta pitanja.</p></div>
+        <div class="faq-answer"><p>Da. Recepcionar koristi podatke o vašoj ordinaciji — usluge, radno vrijeme, kontakt i česta pitanja.</p></div>
 
-        <button>Može li AI rezervirati termine?<span>+</span></button>
+        <button>Može li recepcionar rezervirati termine?<span>+</span></button>
         <div class="faq-answer"><p>Ne automatski u osnovnoj verziji. Fokus je na prikupljanju i organizaciji leadova; rezervacija termina može biti dodatna integracija.</p></div>
 
         <button>Što se događa s upitima pacijenata?<span>+</span></button>
-        <div class="faq-answer"><p>Svaki upit sprema se kao lead u CRM dashboard s kontakt podacima, interesom za uslugu, opisom problema i statusom.</p></div>
+        <div class="faq-answer"><p>Svaki upit sprema se kao lead u CRM dashboard s kontakt podacima, interesom za uslugu, opisom problema i statusom. Detalji o obradi podataka su u sekciji Podaci pacijenata.</p></div>
 
         <button>Koliko košta DentalFlow?<span>+</span></button>
-        <div class="faq-answer"><p>DentalFlow Pro kreće od 79 € mjesečno. Posebne integracije ili dodatne prilagodbe naplaćuju se odvojeno.</p></div>
+        <div class="faq-answer"><p>79 € mjesečno uz jednokratno postavljanje od 249 €. Prvih 14 dana je besplatno.</p></div>
       </div>
     </div>
   </section>
@@ -202,7 +252,7 @@
   <section class="section soft contact-section" id="kontakt">
     <div class="container contact-grid">
       <div class="section-copy">
-        <h2>Zatražite ponudu za svoju ordinaciju.</h2>
+        <h2>Isprobajte 14 dana besplatno.</h2>
         <p>Pošaljite osnovne podatke i javit ćemo vam se s više informacija o DentalFlow sustavu.</p>
       </div>
       <form class="contact-form" id="contactForm">
@@ -220,13 +270,32 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <span class="brand-lockup footer-brand">DentalFlow<small>Skrim Systems</small></span>
-      <p>AI recepcionar i CRM sustav za dentalne klinike.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="brand-lockup footer-brand">DentalFlow<small>Skrim Systems</small></span>
+        <p>Virtualni recepcionar i CRM sustav za dentalne ordinacije.</p>
+      </div>
+      <div><strong>Proizvod</strong><a href="#kako-radi">Kako radi</a><a href="#funkcije">Funkcije</a><a href="#cijena">Cijena</a></div>
+      <div><strong>Pravno</strong><a href="privacy.html">Politika privatnosti</a><a href="terms.html">Uvjeti korištenja</a></div>
     </div>
-    <div><strong>Proizvod</strong><a href="#kako-radi">Kako radi</a><a href="#funkcije">Funkcije</a><a href="#cijena">Cijena</a></div>
-    <div><strong>Kontakt</strong><a href="mailto:karlo@skrimsystems.com">karlo@skrimsystems.com</a><a href="privacy.html">Politika privatnosti</a></div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         IMPRESSUM — ZAMIJENI PLACEHOLDERE SVOJIM STVARNIM PODACIMA
+         Ne objavljuj stranicu dok ovo ne popuniš.
+         ══════════════════════════════════════════════════════════════════ -->
+    <div class="impressum">
+      <strong>Impressum</strong>
+      <p>
+        [PUNI NAZIV TVRTKE/OBRTA] &middot;
+        OIB: [TVOJ OIB] &middot;
+        [ULICA I BROJ, POŠTANSKI BROJ GRAD]
+      </p>
+      <p>
+        <a href="mailto:karlo@skrimsystems.com">karlo@skrimsystems.com</a> &middot;
+        [TELEFON]
+      </p>
+    </div>
   </div>
 </footer>
 
